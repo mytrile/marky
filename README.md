@@ -1,13 +1,13 @@
 Marky
 =====
 
-Marky is simple wrapper for converting strings/text to html using different markdown processors.
+Marky is simple wrapper for converting strings/text to html using different markdown processors. It's the solution to assingment #2 of October RMU. Based on intirdea's multi_json gem.
 
 Installation
 ============
   [sudo] gem install marky
 
-By default, installing Marky will install also RDiscount, Maruku and BlueCloth if necessary.
+By default, installing Marky will install also RDiscount, Maruku and BlueCloth if necessary. 
 
 Usage
 =====
