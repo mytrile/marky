@@ -33,5 +33,10 @@ describe Marky do
       Marky.to_html("Hello, Marky").must_equal "<p>Hello, Marky</p>"
     end
 
+    it "returns proper html when using Kramdown" do
+      Marky.adapter = :kramdown
+      Marky.to_html("Hello, Marky").must_equal "<p>Hello, Marky</p>\n"
+    end
+
   end
 end

@@ -1,7 +1,7 @@
 Marky
 =====
 
-Marky is simple wrapper for converting strings/text to html using different markdown processors. It's the solution to assingment #2 of October RMU. Based on intirdea's multi_json gem.
+Marky is simple wrapper for converting strings/text to html using different markdown processors. It's the solution to assingment #2 of octobers Ruby Mendicant University. Based on intirdea's multi_json gem.
 
 Installation
 ============
@@ -20,7 +20,12 @@ Usage
 Adapters
 ========
 
-Right now, the available adapters are RDiscout, BlueCloth and Maruku. If you want to add another, just create a module into adapters dirrectory who implements to_html method.
+* [RDiscount](https://github.com/rtomayko/rdiscount)
+* [BlueCloth](http://deveiate.org/projects/BlueCloth)
+* [Maruku](https://github.com/nex3/maruku)
+* [Kramdown](https://github.com/gettalong/kramdown)
+
+If you want to add another, just create a module into adapters dirrectory who implements to_html method.
 
 Meta
 ====
@@ -31,7 +36,7 @@ Meta
 * Twitter : [http://twitter.com/mytrile](http://twitter.com/mytrile)
  
 License
-=======	
+=======
 
 Copyright (c) 2010 Mitko Kostov
 
