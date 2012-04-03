@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Marky : Marky is simple wrapper for converting strings/text to html using different markdown processors." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Marky</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/mytrile/marky">Fork Me on GitHub</a>
+
+          <h1 id="project_title">Marky</h1>
+          <h2 id="project_tagline">Marky is simple wrapper for converting strings/text to html using different markdown processors.</h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/mytrile/marky/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/mytrile/marky/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Marky</h1>
+
+<p>Marky is simple wrapper for converting strings/text to html using different markdown processors. It's the solution to assingment #2 of octobers Ruby Mendicant University. Based on intirdea's multi_json gem.</p>
+
+<h1>Installation</h1>
+
+<p>[sudo] gem install marky</p>
+
+<p>By default, installing Marky will install also RDiscount, Maruku and BlueCloth if necessary. </p>
+
+<h1>Usage</h1>
+
+<div class="highlight">
+<pre><span class="nb">require</span> <span class="s1">'marky'</span>
+<span class="no">Marky</span><span class="o">.</span><span class="n">adapter</span> <span class="o">=</span> <span class="ss">:maruku</span>
+<span class="no">Marky</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s2">"Hello, Marky"</span><span class="p">)</span>
+<span class="c1"># =&gt; "&lt;p&gt;Hello, Marky&lt;/p&gt;"</span>
+</pre>
+</div>
+
+
+<h1>Adapters</h1>
+
+<ul>
+<li><a href="https://github.com/rtomayko/rdiscount">RDiscount</a></li>
+<li><a href="http://deveiate.org/projects/BlueCloth">BlueCloth</a></li>
+<li><a href="https://github.com/nex3/maruku">Maruku</a></li>
+<li><a href="https://github.com/gettalong/kramdown">Kramdown</a></li>
+</ul><p>If you want to add another, just create a module into adapters dirrectory who implements to_html method.</p>
+
+<h1>Meta</h1>
+
+<ul>
+<li>Author  : Mitko Kostov</li>
+<li>Email   : mitko.kostov@gmail.com</li>
+<li>Website : <a href="http://mitkokostov.info">http://mitkokostov.info</a>
+</li>
+<li>Twitter : <a href="http://twitter.com/mytrile">http://twitter.com/mytrile</a>
+</li>
+</ul><h1>License</h1>
+
+<p>Copyright (c) 2010 Mitko Kostov</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Marky maintained by <a href="https://github.com/mytrile">mytrile</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
